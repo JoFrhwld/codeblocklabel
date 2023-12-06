@@ -1,0 +1,20 @@
+---
+title: "Codeblocklabel Example"
+filters:
+  - codeblocklabel
+---
+
+## Heading
+
+This filter adds formatting to heading text.
+
+```python
+x = "10"
+print(x)
+```
+
+```{r}
+x <- 1
+print(x)
+```
+
