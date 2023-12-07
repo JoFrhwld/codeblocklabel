@@ -1,20 +1,27 @@
 ---
 title: "Codeblocklabel Example"
+format:
+  html: default
+  json: default
 filters:
   - codeblocklabel
+  - quarto
 ---
 
 ## Heading
 
 This filter adds formatting to heading text.
 
-```python
-x = "10"
-print(x)
+```{.bash}
+ls
 ```
 
 ```{r}
+#| filename: R
 x <- 1
 print(x)
 ```
+
+
+This is a test
 

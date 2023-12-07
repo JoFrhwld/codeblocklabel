@@ -1,13 +1,23 @@
+
+-- function Div(el)
+--   if el.content[1].t == "CodeBlock" then
+--     return pandoc.Para("CodeBlock!")
+--   end 
+-- end
+
+quarto.doc.add_html_dependency({
+    name = 'codenamelabel',
+    stylesheets = {'codeblocklabel.css'}
+  })
+
 function CodeBlock(block)
   local newblock = block
   if (FORMAT:match "html") and 
      (block.classes[1]) then
-    --newblock.text = tostring(block.classes[1]).."\n"..block.text
     local langname = block.classes[1]
     out = {pandoc.Div(
-      pandoc.Span(
-        block.classes[1], 
-        {class = "langnametext"}
+      pandoc.RawInline("html",
+        "<pre class='langname'>"..block.classes[1].."</pre>"
       ),
       {class = "langname"}
     ), 

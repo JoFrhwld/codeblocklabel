@@ -1,0 +1,9 @@
+.langname {
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+    font-style: italic;
+}
+
+.sourceCode[id]{
+    margin-top: 0%;
+}
