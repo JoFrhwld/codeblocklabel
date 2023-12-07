@@ -5,7 +5,10 @@ function CodeBlock(block)
     --newblock.text = tostring(block.classes[1]).."\n"..block.text
     local langname = block.classes[1]
     out = {pandoc.Div(
-      pandoc.Span(block.classes[1], {class = "langnametext"}),
+      pandoc.Span(
+        block.classes[1], 
+        {class = "langnametext"}
+      ),
       {class = "langname"}
     ), 
       newblock
