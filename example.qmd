@@ -2,26 +2,28 @@
 title: "Codeblocklabel Example"
 format:
   html: default
-  json: default
 filters:
   - codeblocklabel
-  - quarto
 ---
 
 ## Heading
 
 This filter adds formatting to heading text.
 
-```{.bash}
+```{zsh}
 ls
 ```
 
 ```{r}
 #| filename: R
-x <- 1
-print(x)
+library(fs)
+dir_ls()
 ```
 
 
-This is a test
+```{python}
+from pathlib import Path
+list(Path().glob("[!\.]*"))
+```
+
 

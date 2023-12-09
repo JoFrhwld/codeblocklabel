@@ -1,20 +1,32 @@
 # Codeblocklabel Extension For Quarto
 
-DOESN:T WORK!
+This will annotate codeblocks with the language of the codeblock. Potentially useful for documents with multiple languages in use.
+
+![example](assets/example.png)
+
+**Note**: The `filename` code chunk option won't work with this filter enabled.
+
+**Limitations**: Only implemented for html output.
+
+
 ## Installing
 
-_TODO_: Replace the `<github-organization>` with your GitHub organization.
-
 ```bash
-quarto add <github-organization>/codeblocklabel
+quarto add jofrhwld/codeblocklabel
 ```
-
 This will install the extension under the `_extensions` subdirectory.
 If you're using version control, you will want to check in this directory.
 
 ## Using
 
-_TODO_: Describe how to use your extension.
+Simply add the following to your document header.
+
+```yaml
+filters:
+  - codeblocklabel
+```
+
+This will work for both executed code blocks as well as non-executed codeblocks.
 
 ## Example
 
