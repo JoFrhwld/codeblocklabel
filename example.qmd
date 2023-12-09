@@ -5,9 +5,9 @@ filters:
   - codeblocklabel
 ---
 
-## Heading
+## Multiple languages
 
-This filter adds formatting to heading text.
+This filter adds labels to code blocks
 
 ```{zsh}
 ls
@@ -24,5 +24,3 @@ dir_ls()
 from pathlib import Path
 list(Path().glob("[!\.]*"))
 ```
-
-
