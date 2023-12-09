@@ -4,6 +4,7 @@ This will annotate codeblocks with the language of the codeblock. Potentially us
 
 ![example](assets/example.png)
 
+
 **Note**: The `filename` code chunk option won't work with this filter enabled.
 
 **Limitations**: Only implemented for html output.
