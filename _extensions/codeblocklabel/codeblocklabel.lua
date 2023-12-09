@@ -19,7 +19,7 @@ function CodeBlock(block)
       pandoc.RawInline("html",
         "<pre class='langname'>"..block.classes[1].."</pre>"
       ),
-      {class = "langname"}
+      pandoc.Attr("", {"langname"}, {})
     ), 
       newblock
     }
