@@ -28,6 +28,16 @@ filters:
 
 This will work for both executed code blocks as well as non-executed codeblocks.
 
+### Styling the labels
+
+To add your own styling to the language name labels, target the `langname` class. 
+
+```css
+.langname {
+    color: red;
+}
+```
+
 ## Example
 
 Here is the source code for a minimal example: [example.qmd](example.qmd).

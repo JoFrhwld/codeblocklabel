@@ -1,7 +1,6 @@
 ---
 title: "Codeblocklabel Example"
-format:
-  html: default
+format: html
 filters:
   - codeblocklabel
 ---
